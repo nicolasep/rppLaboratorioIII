@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/funciones.js"> </script>
+    <title>Parcial laboratorio 3 2021 - Nicolas Eduardo Perez</title>
+</head>
+
+<body>
+    <h3>Parcial Nicolas Eduardo Perez</h3> 
+    <h1>Lista de autos</h1>
+    <input type="button" value="Agregar" id="btnAgregar" class="btnAgregar">
+    <div class="contenedoraflex">
+        
+        <br>
+        <div class="contenedorGrilla" id="contGrilla">
+               
+            <h3>Agregar un auto.</h3> 
+            <label for="marca">Marca:</label>
+            <br>
+            <input type="text" maxlength="50" class="string" id="marca" name="marca" placeholder="Ingrese marca" >
+            <br>
+            <label for="modelo">Modelo:</label>
+            <br>
+            <input type="text" maxlength="50" class="string" id="modelo" name="modelo" placeholder="Ingrese modelo" >
+            <br>
+            <label for="año">Año</label>
+            <br>
+            <select name="años" id="años" class="seleccion">
+                
+            <input class="botonGuardar" type="button" id="btnGuardar" value="Guardar">
+            <input class="botonCancelar" type="button" id="btnCancelar" value="Cancelar">
+        </div>
+
+    </div>
+
+    <div class="Cargando" id="Cargando">
+
+        <img src="./img/cargando.jpg">
+
+    </div>
+
+    <table id="tabla" class="titulo">
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+        <tbody id="tCuerpo">
+
+        </tbody>
+
+    </table>
+   
+    
+</body>
+
+</html>
